@@ -1,6 +1,6 @@
 /**
 * Template Name: PhotoFolio
-* Updated: Mar 10 2023 with Bootstrap v5.2.3
+* Updated: Jul 27 2023 with Bootstrap v5.3.1
 * Template URL: https://bootstrapmade.com/photofolio-bootstrap-photography-website-template/
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
@@ -171,21 +171,4 @@ document.addEventListener('DOMContentLoaded', () => {
     aos_init();
   });
 
-});
-$(document).ready(function() {
-  $('#results-link').click(function(e) {
-      e.preventDefault();
-      $.ajax({
-          url: 'home.html',
-          method: 'GET',
-          dataType: 'json',
-          success: function(data) {
-              // عرض النتائج هنا
-              console.log(data);
-          },
-          error: function() {
-              console.log('حدث خطأ أثناء استرداد البيانات.');
-          }
-      });
-  });
 });
